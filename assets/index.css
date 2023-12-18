@@ -12,15 +12,17 @@ body {
 header {
     background-color: #47896e;
     color: white;
-    padding: 20px 10%;
+    padding: 1.5% 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-decoration: none;
-    position: fixed;
     width: 100%;
-    top: 0;
-    z-index: 1000;
+}
+
+.header-options {
+    display: flex;
+    margin-left: 30%;
 }
 
 .header-links {
@@ -28,7 +30,8 @@ header {
     margin-right: 20%;
 }
 
-.header-links a {
+.header-links a,
+.header-options a {
     color: white;
     margin-right: 5px;
     margin-left: 5px;
@@ -36,7 +39,7 @@ header {
 }
 
 form {
-    padding: 10px;
+    padding: 2%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -44,14 +47,14 @@ form {
     margin-right: 7%;
     margin-top: 1%;
     border: none;
-    margin-bottom: 10px;
+    margin-bottom: 1%;
 }
 
 .form-img {
     max-width: 300px;
     flex-wrap: wrap;
     margin-top: 8%;
-    border-radius: 5px;
+    border-radius: 3%;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -69,7 +72,7 @@ footer {
     background-color: #47896e;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 1%;
     bottom: 0;
     width: 100%;
     height: fit-content;
@@ -84,7 +87,7 @@ footer {
 
 .banner img {
     width: 300px;
-    margin-top: 8%;
+    margin-top: 4%;
     display: flex;
     flex-wrap: wrap;
 }
@@ -92,4 +95,72 @@ footer {
 h2 {
     text-align: center;
     margin-top: 30px;
+}
+
+.nav-title {
+    position: relative;
+    width: 30%;
+    margin-right: 15%;
+}
+
+.name {
+    position: relative;
+    width: 20%;
+}
+
+.nav-name {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-name>li {
+    float: left;
+}
+
+.nav-title li {
+    list-style: none;
+    position: relative;
+}
+
+.nav-title ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.nav-name>li>a:hover {
+    color: #C0A06A;
+}
+
+.subname {
+    display: block;
+    position: absolute;
+    z-index: 2;
+}
+
+.subname li a {
+    background-color: #47896e;
+    border: 0.1px solid gray;
+    line-height: 70px;
+    font-size: 13px;
+}
+
+.subname li a:hover {
+    background-color: rgb(172, 172, 172);
+}
+
+.nav-name a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    line-height: 30px;
+    font-family: 'Noto Serif TC', serif;
+}
+
+.nav-name ul {
+    display: none;
+}
+
+.nav-name .name:hover ul {
+    display: block;
 }
